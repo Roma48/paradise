@@ -1,0 +1,20 @@
+<?php
+
+/*******implements hook_menu***/
+
+function book_menu() {
+    $items = array();
+
+    $items['my-page'] = array(
+        'title' => 'My page',
+        'page callback' => 'my_first_page',
+        'access callback' => TRUE
+    );
+
+    return $items;
+}
+
+/*************fu*************/
+function my_first_page() {
+    return t('Hello world');
+}

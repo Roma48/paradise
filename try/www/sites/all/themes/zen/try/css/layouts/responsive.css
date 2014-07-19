@@ -1,0 +1,1164 @@
+/**
+ * @file
+ * Positioning for a responsive layout.
+ *
+ * Define CSS classes to create a fluid grid layout with optional sidebars
+ * depending on whether blocks are placed in the left or right sidebars.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+
+/**
+ * Center the page.
+ *
+ * For screen sizes larger than 1200px, prevent excessively long lines of text
+ * by setting a max-width.
+ */
+#page,
+.region-bottom {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* Apply the shared properties of grid items in a single, efficient ruleset. */
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer {
+  padding-left: 0px;
+  padding-right: 0px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/path/to/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* Containers for grid items and flow items. */
+#header,
+#main,
+#footer {
+  *position: relative;
+  *zoom: 1;
+}
+#header:before,
+#header:after,
+#main:before,
+#main:after,
+#footer:before,
+#footer:after {
+  content: "";
+  display: table;
+}
+#header:after,
+#main:after,
+#footer:after {
+  clear: both;
+}
+
+/* Navigation bar */
+@media all and (min-width: 480px) {
+  #main {
+    /* Move all the children of #main down to make room. */
+    padding-top: 3em;
+    position: relative;
+  }
+  #navigation {
+    /* Move the navbar up inside #main's padding. */
+    position: absolute;
+    top: 0;
+    height: 3em;
+    width: 100%;
+  }
+}
+
+/**
+ * Use 3 grid columns for smaller screens.
+ */
+@media all and (min-width: 480px) and (max-width: 959px) {
+
+  /**
+   * The layout when there is only one sidebar, the left one.
+   */
+
+  /* Span 2 columns, starting in 2nd column from left. */
+  .rooms {
+
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  /* Span 1 column, starting in 1st column from left. */
+  .sidebar-first .region-sidebar-first {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+  }
+
+  /**
+   * The layout when there is only one sidebar, the right one.
+   */
+
+  /* Span 2 columns, starting in 1st column from left. */
+  .sidebar-second #content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+  }
+
+  /* Span 1 column, starting in 3rd column from left. */
+  .sidebar-second .region-sidebar-second {
+    float: left;
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%;
+  }
+
+  /**
+   * The layout when there are two sidebars.
+   */
+
+  /* Span 2 columns, starting in 2nd column from left. */
+  .two-sidebars #content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 33.33333%;
+    margin-right: -100%;
+  }
+
+  /* Span 1 column, starting in 1st column from left. */
+  .two-sidebars .region-sidebar-first {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+  }
+
+  /* Start a new row and span all 3 columns. */
+  .two-sidebars .region-sidebar-second {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 0;
+    padding-right: 0;
+    clear: left;
+  }
+
+  /* Apply the shared properties of grid items in a single, efficient ruleset. */
+  .two-sidebars .region-sidebar-second .block {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/path/to/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+
+  /* Span 1 column, starting in the 1st column from left. */
+  .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+    clear: left;
+  }
+
+  /* Span 1 column, starting in the 2nd column from left. */
+  .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
+    float: left;
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    margin-right: -66.66667%;
+  }
+
+  /* Span 1 column, starting in the 3rd column from left. */
+  .two-sidebars .region-sidebar-second .block:nth-child(3n) {
+    float: left;
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%;
+  }
+}
+
+/**
+ * Use 5 grid columns for larger screens.
+ */
+@media all and (min-width: 960px) {
+
+  /**
+   * The layout when there is only one sidebar, the left one.
+   */
+
+  /* Span 4 columns, starting in 2nd column from left. */
+  .sidebar-first #content {
+
+
+
+  }
+
+  /* Span 1 column, starting in 1st column from left. */
+  .sidebar-first .region-sidebar-first {
+    float: left;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: -20%;
+  }
+
+  /**
+   * The layout when there is only one sidebar, the right one.
+   */
+
+  /* Span 4 columns, starting in 1st column from left. */
+  .sidebar-second #content {
+    float: left;
+    width: 80%;
+    margin-left: 0%;
+    margin-right: -80%;
+  }
+
+  /* Span 1 column, starting in 5th column from left. */
+  .sidebar-second .region-sidebar-second {
+    float: left;
+    width: 20%;
+    margin-left: 80%;
+    margin-right: -100%;
+  }
+
+  /**
+   * The layout when there are two sidebars.
+   */
+
+  /* Span 3 columns, starting in 2nd column from left. */
+  .two-sidebars #content {
+    float: left;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: -80%;
+  }
+
+  /* Span 1 column, starting in 1st column from left. */
+  .two-sidebars .region-sidebar-first {
+    float: left;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: -20%;
+  }
+
+  /* Span 1 column, starting in 5th column from left. */
+  .two-sidebars .region-sidebar-second {
+    float: left;
+    width: 20%;
+    margin-left: 80%;
+    margin-right: -100%;
+  }
+}
+
+.header__secondary-menu {
+    float: none;
+    position: absolute;
+    right: 0;
+}
+
+#header {
+    background-color: #000000;
+    width: 100%;
+}
+
+.content-header {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/*******************MENU************************/
+.links li a {
+    color: #ffffff;
+    font-family: 'Open Sans Light', arial, serif;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    text-decoration: none;
+    vertical-align: bottom;
+    width: 1200px;
+    text-align: center;
+}
+
+.links li a:hover {
+    text-decoration: underline;
+}
+
+header .menu {
+    float: left;
+    width: 74%;
+    overflow: hidden;
+}
+
+#main-menu {
+    display: block;
+    width: 80%;
+    margin: 2.6% auto;
+    overflow: hidden;
+}
+
+
+#main-menu ul {
+    display: table-cell;
+    width: 100%;
+}
+
+#main-menu ul li {
+    display: table-cell;
+    width: 1000px;
+    border-left: 0px solid silver;
+    text-align: center;
+    height: 40px;
+    vertical-align: middle;
+    padding: 2px;
+}
+
+.menu a.active {
+    color: #ffffff !important;
+}
+
+
+/*********************LANG********************/
+#lang {
+    float: left;
+    height: 50px;
+    margin-top: 1.4%;
+    width: 6%;
+}
+
+
+.lang .selectbox .select {
+
+    display: block;
+    margin-right: -1000px;
+    float: right;
+    font-family: 'Open Sans Light', arial, serif;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    background: transparent;
+    position: relative;
+    z-index: 500;
+    border: none;
+    width: 35px;
+    box-shadow: none;
+    vertical-align: middle;
+    text-shadow: none;
+
+
+
+}
+
+.lang .selectbox li {
+    padding: 6px 6px 6px;
+}
+
+.lang .selectbox .trigger .arrow {
+    right: 2px;
+}
+
+.lang .selectbox .dropdown {
+    width: 34px;
+}
+
+.lang .selectbox .select .text {
+    color: #ffffff;
+    padding-top: 2px !important;
+}
+
+.lang option {
+    color: black;
+    background-color: #ffffff;
+
+}
+
+.lang {
+    display: table-cell;
+    position: absolute;
+
+    float: right;
+    height: 20px;
+}
+
+.lang ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+/**************************LOGO********************/
+#logo {
+    float: left;
+    width: 20%;
+    margin: 2% auto;
+    height: 100%;
+    display: block;
+}
+
+#logo a {
+    display: block;
+    margin: 9% auto 5%;
+    height: 100%;
+    width: 85%;
+}
+
+#logo a img {
+    width: 100%;
+}
+
+/***********************SLIDER*********************/
+/* #########################################################
+
+	Уроки CSS и jQuery
+
+	Как сделать адаптивный слайдер изображений с помощью CSS и jQuery
+
+	http://freeams.ru
+
+######################################################### */
+
+
+
+/* Сброс настроек браузера */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  { outline: none; }
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.flexslider a img { outline: none; border: none; }
+
+.flexslider {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ebebeb;
+}
+
+/* Скрываем слайды перед загрузкой ява-скрипта */
+.flexslider .slides > li {
+    display: none;
+    -webkit-backface-visibility: hidden;
+}
+
+.flexslider .slides img {
+    width: 100%;
+    display: block;
+
+
+}
+
+/* Чистим предидущее изображение для .slides */
+.slides:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+html[xmlns] .slides { display: block; }
+* html .slides { height: 1%; }
+
+
+
+/* Основной стиль слайдера */
+.flexslider {
+    position: relative;
+    zoom: 1;
+
+
+
+
+}
+
+/* Вы можете изменить под свои требования*/
+.flex-container {
+
+    width: 100%;
+    float: left;
+
+}
+
+.flexslider .slides { zoom: 1; }
+
+
+
+/* Кнопки прокрутки. Стили */
+.flex-direction-nav a {
+    display: block;
+    position: absolute;
+    margin: -17px 0 0 0;
+    width: 35px;
+    height: 35px;
+    top: 45%;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+
+@media screen and  (max-width: 720px){
+    .flex-direction-nav a {
+        background: none;
+    }
+}
+
+
+
+.flex-direction-nav a:before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    top: 11px;
+    left: 11px;
+    background: url("http://try/sites/all/themes/zen/try/images/arrows.png") no-repeat;
+}
+
+.flex-direction-nav a:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: 35px;
+}
+
+.flex-direction-nav .flex-next {
+    right: 0;
+
+
+}
+
+.flex-direction-nav .flex-prev {
+
+
+
+}
+
+.flex-direction-nav .flex-next:before { background-position: -40px 0; left: -15px; }
+.flex-direction-nav .flex-prev:before { background-position: 0 0; }
+
+.flex-direction-nav .flex-next:after {
+    right: 0;
+
+}
+
+.flex-direction-nav .flex-prev:after {
+    left: 0;
+
+}
+
+.flex-container .block {
+    margin-left: 15%;
+
+    min-width: 200px;
+}
+
+
+
+.block1 {
+
+    position: relative;
+    z-index: 2;
+    margin-top: -28%;
+    margin-bottom: 25%;
+    background: url("http://try/sites/all/themes/zen/try/images/ba.png") no-repeat 100%;
+    opacity: 0.8;
+    height: 40px;
+    width: 500px;
+
+}
+
+.block1 p {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    margin-left: 2%;
+    font-family: 'Open Sans Light', arial, serif;
+    min-width: 200px;
+    padding-top: 4px;
+
+
+}
+
+
+
+
+.block2 {
+    display: block;
+    position: relative;
+    z-index: 3;
+    margin-top: -25.1%;
+    margin-bottom: 18.5%;
+    background: url("http://try/sites/all/themes/zen/try/images/b.png") no-repeat 100% ;
+    opacity: 0.8;
+    width: 400px;
+    height: 25px;
+}
+
+.block2 p {
+    display: block;
+    font-size: 18px;
+    height: 20px;
+    color: #ffffff;
+    font-family: 'Open Sans Light', arial, serif;
+    margin-top: 20px;
+    margin-left: 2%;
+}
+
+#block-block-1 {
+    padding: 0;
+    margin: 0;
+}
+
+.slides .clone {
+    width: 100%;
+}
+.block__title {
+    display: none;
+}
+.region.region-highlighted {
+    margin-top: -48px;
+}
+/**************************SELECTBOX*********************************/
+.selectbox {
+    display: block !important;
+    cursor: pointer;
+    margin-top: 10px;
+
+
+
+
+}
+.selectbox .select {
+    width: 100%;
+
+
+    height: 34px;
+
+    font: 14px/30px Arial, Tahoma, sans-serif;
+    color: #333;
+    text-shadow: 1px 1px #FFF;
+
+    border: 1px solid #d6d4d4;
+
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 1px #e3e3e3;
+}
+.selectbox .select:hover {
+    background-color: #f3f3f3;
+    background-position: 0 -10px;
+}
+.selectbox .select:active {
+    background: #f5f5f5;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.15);
+}
+.selectbox.focused .select {
+    border: 1px solid #5794BF;
+}
+.selectbox .select .text {
+    display: block;
+    width: 80%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #868585;
+    padding: 1%;
+}
+.selectbox .trigger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 100%;
+    border-left: 0px solid #CCC;
+}
+.selectbox .trigger .arrow {
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #666666;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+
+    filter: alpha(opacity=30);
+}
+.selectbox:hover .arrow {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.selectbox .dropdown {
+    top: 34px;
+    width: 100%;
+    margin: 0;
+    padding: 4px 0;
+    background: #FFF;
+    border: 1px solid #C6CBD0;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    font: 14px/18px Arial, Tahoma, sans-serif;
+    position: relative;
+    z-index: 99999;
+}
+.selectbox li {
+    padding: 5px 10px 6px;
+    color: #231F20;
+}
+.selectbox li.selected {
+    background: #ffffff;
+    color: #868585;
+}
+.selectbox li:hover {
+    background: #f3f3f3;
+    color: #868585;
+}
+.selectbox li.disabled {
+    color: #AAA;
+}
+.selectbox li.disabled:hover {
+    background: none;
+}
+
+/****************   content ******************/
+
+#main {
+
+
+
+    background-color: #ebebeb;
+
+}
+
+#content .col {
+    float: left;
+    width: 33.33%;
+    height: 500px;
+    margin-left: 4.3% !important;
+}
+
+
+
+.field-label, .page__title {
+    display: none;
+}
+
+.region.region-highlighted {
+    overflow: hidden;
+}
+
+.views-field.views-field-title a{
+    display: block;
+    float: left;
+    font-family: "Open Sans Light", arial, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #373535;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 12px;
+
+}
+
+article header {
+
+    display: none;
+
+}
+
+.views-field.views-field-field-image1 a img {
+    margin-top: 0px;
+    display: block !important;
+    float: left;
+    margin-bottom: 15px;
+    border: 1px solid #d8d9db;
+    border-radius: 5px;
+    margin-left: 12px;
+}
+
+.node-readmore a {
+    display: none;
+
+}
+
+.views-field.views-field-body {
+    display: block;
+    float: left;
+    margin-top: -10px;
+    color: #818080;
+    font-size: 13px;
+    line-height: 1.5;
+    font-family: "Open Sans", arial, serif;
+    width: 90%;
+    margin-left: 12px;
+}
+
+div.field-item.even  {
+    display: block;
+  float: left;
+
+}
+
+.field.field-name-field-image1.field-type-image.field-label-inline.clearfix {
+    max-height: 150px !important;
+
+}
+
+.views-field.views-field-field-price {
+
+    font-family: "Open Sans Light", arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #373535;
+}
+
+
+#rooms {
+    max-width: 1005px;
+    margin: 0 auto;
+    height: 400px;
+
+
+}
+
+.field-content p {
+    margin-top: 15px;
+}
+
+
+.rooms article {
+    padding-top: 40px;
+}
+
+
+
+
+.field-name-field-price .field-items div {
+
+
+    float: left;
+    display: block;
+}
+
+/***************FOOTER*****************************/
+
+#footer {
+    margin: 0 auto;
+    max-width: 980px;
+    height: 65px;
+}
+
+#footer .block-system-powered-by span {
+    padding-top: 30px;
+}
+
+#footer .block span, #footer .block span a {
+
+    color: #d0d0d0;
+    font-size: 12px;
+    font-family: "Open Sans", arial, sans-serif;
+
+
+}
+
+#footer .block {
+    margin: 0 !important;
+    float: left !important;
+    width: 33.33%;
+    padding-top: 18px;
+}
+
+.soc {
+    float: left;
+    width: 100%;
+    display: block;
+}
+
+.soc img {
+display: block;
+max-width: 100%;
+max-height: 100%;
+margin: auto;
+padding-top: 5px;
+}
+
+.footer-sitemap {
+
+}
+
+.menu-footer-menu {
+    display: table-cell;
+    list-style: none;
+    width: 100%;
+    text-align: right;
+}
+
+.menu-footer-menu li {
+    display: table-cell;
+    width: 1000px;
+    vertical-align: middle;
+    text-align: right;
+    height: 20px;
+}
+
+#footer-sitemap a.fs-root-link {
+    font-family: "Open Sans", arial, sans-serif;
+    color: #d0d0d0;
+    font-size: 12px;
+    text-decoration: none;
+    vertical-align: bottom;
+    display: table-cell;
+    width: 1000px;
+    line-height: 1.5;
+}
+
+#footer-sitemap ul li {
+    float: none;
+}
+
+
+
+
+/******************node 55 about **************/
+
+#about p img {
+    margin-top: -48px;
+
+}
+
+#content-node-55 #block-block-3 {
+    margin-top: -24px;
+}
+
+#content-center {
+    height: 800px;
+}
+
+#content-node-55 {
+    margin: 0 auto;
+    width: 980px;
+}
+
+.node-55.node.node-article {
+    width: 673px;
+    margin-right: 0px;
+    float: left;
+
+}
+
+.node-55.node.node-article p, .class-rooms p {
+    color: #a7a6a6;
+    font-size: 13px;
+    line-height: 1.5;
+    font-family: "Open Sans", arial, serif;
+    margin-top: 15px;
+}
+
+.sidebars {
+    float: right;
+    border-left: 1px solid #cdcdcd;
+    height: 595px;
+    margin-top: 25px;
+}
+
+.sidebar-second .region-sidebar-second {
+    width: 207px;
+    margin-left: 30px;
+
+}
+
+#about p {
+    margin: 0 !important;
+}
+
+#about {
+    border-bottom: 1px solid #acacac;
+}
+
+.links.inline {
+    display: none;
+}
+
+#edit-search-block-form--2 {
+    width: 100%;
+    height: 33px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #d6d4d4;
+    margin-top: 10px;
+}
+
+#block-search-form .form-submit {
+    display: none;
+}
+
+#block-search-form label .element-invisible {
+    display: block !important;
+    height: 40px;
+    font-size: 15px;
+    font-family: "Open Sans", arial, serif;
+    font-weight: bold;
+
+}
+
+.element-invisible {
+    position: inherit !important;
+    font-size: 15px;
+    font-family: "Open Sans", arial, serif;
+    font-weight: bold;
+}
+
+
+header .element-invisible {
+    display: none;
+}
+
+.container-inline {
+    margin-top: -35px;
+}
+
+#skip-link  {
+    display: none;
+}
+
+#toolbar .element-invisible {
+    display: none;
+}
+
+#block-block-4 li {
+    list-style: none;
+    display: block;
+    width: 207px;
+    height: 38px;
+    margin-left: -28px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+#block-block-4 li:last-child {
+    border-bottom: none;
+}
+
+#block-block-4 li p img {
+    float: right;
+}
+
+#block-block-4 li .contact-text {
+    float: left;
+    color: #bcbcbc;
+    font-size: 13px;
+    padding-top: 5px;
+    font-family: "Open Sans", arial, serif;
+    font-weight: normal;
+
+}
+
+#block-block-4 li .contact-text a {
+    font-size: 13px;
+    font-family: "Open Sans", arial, serif;
+    font-weight: normal;
+    text-decoration: none;
+    color: #bcbcbc;
+}
+
+#block-block-4 p {
+    font-size: 15px;
+    font-family: "Open Sans", arial, serif;
+    font-weight: bold;
+}
+
+#block-block-4 ul {
+    margin: 0;
+}
+
+#content-node-55 #block-menu-menu-hotel {
+    width: 100%;
+    padding: 0;
+    height: 60px;
+    background: url("http://try/sites/all/themes/zen/try/images/hotel_menu.png") no-repeat;
+    margin-top: -30px;
+}
+
+#block-menu-menu-hotel ul {
+    width: 650px;
+    margin: 0 auto;
+}
+
+#block-menu-menu-hotel ul li {
+    display: block;
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+
+}
+
+#block-menu-menu-hotel ul li a {
+    font-family: "Open Sans", arial, serif;
+    font-size: 15px;
+    color: #7e7d7d !important;
+    text-decoration: none;
+}
+
+
+/************map--node***HOTEL LOCATION*******/
+
+#content-map-none #block-menu-menu-hotel {
+    max-width: 980px;
+    padding: 0;
+    height: 60px;
+    background: url("http://try/sites/all/themes/zen/try/images/hotel_menu.png") no-repeat;
+    margin: -30px auto;
+    position: relative;
+    z-index: 2;
+}
+
+#content-map-none #block-menu-menu-hotel ul {
+
+    position: relative;
+    z-index: 2;
+}
+
+#content-map-none p {
+    display: none;
+}
+
+#gmap-auto1map-gmap0 {
+    position: absolute;
+    margin-top: -30px;
+    height: 600px !important;
+
+}
+
+.map {
+    height: 750px;
+}
+
