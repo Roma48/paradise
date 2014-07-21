@@ -1,0 +1,51 @@
+<?php
+
+function rss_block_info(){
+    $blocks['rss'] = array(
+        'info' => "RSS feeds",
+    );
+    return $blocks;
+}
+
+function load_rss($result = 'item'){
+    $rss_url = "http://partners.userland.com/nytRss/nytHomepage.xml";
+    $rss = simplexml_load_file($rss_url);
+    $data = $rss->channel->$result;
+    return $data;
+}
+
+function rss_block_view($delta = ''){
+    switch ($delta) {
+        case 'rss':
+            $block['subject'] = load_rss('title');
+            $block['content'] = rssblock_view();
+            break;
+    }
+    return $block;
+}
+
+function rssblock_view(){
+    $res = load_rss();
+
+    for ($i = 0; $i < 5; $i++){
+        $item[]=array(
+            'title'=> $res[$i]->title,
+            'link' => $res[$i]->link,
+            'description' => $res[$i]->description,
+        );
+    }
+    return theme('rssblock', array('item'=>$item));
+}
+
+function rss_theme(){
+    return array(
+        'rssblock' => array(
+            'template' => 'rssblock',
+            'variable' => array('item'=>array()),
+        )
+    );
+}
+
+
+
+
