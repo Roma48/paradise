@@ -1,0 +1,20 @@
+<?php
+
+function rss_uninstall() {
+    cache_clear_all('rss', 'cache', TRUE);
+    drupal_uninstall_schema('rss');
+    menu_rebuild();
+}
+
+function rss_schema(){
+    $schema = array();
+    $schema['rss'] = array(
+        'fields'   => array(
+            'id'   => array('type' => 'serial',  'size'   => 'normal', 'not null' => TRUE),
+            'name' => array('type' => 'varchar', 'length' => 255,      'not null' => TRUE),
+            'url'  => array('type' => 'varchar', 'length' => 255,      'not null' => TRUE),
+        ),
+        'primary key'=> array('id'),
+    );
+    return $schema;
+}

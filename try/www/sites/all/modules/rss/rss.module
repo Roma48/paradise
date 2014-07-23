@@ -1,5 +1,52 @@
 <?php
 
+function rss_menu(){
+    $items = array();
+    $items['admin/config/content/rss'] = array(
+        'title' => 'rss',
+        'description' => 'rss feeds',
+        'page callback' => 'rss_list',
+    );
+
+    return $items;
+
+}
+
+function rss_list(){
+
+        $header = array(
+            array('data' => t('Name')),
+            array('data' => t('URL')),
+            array('data' => t('Actions'))
+        );
+        $rss = db_select('rss', 'n')
+            ->fields('n', array('id', 'name', 'url'))
+            ->execute()->fetchAll();
+        $row = array();
+        if ($rss) {
+            foreach ($rss as $rss_feed) {
+                $actions = array(
+                    l(t('edit'), 'admin/config/content/rss/' . $rss_feed->id . '/edit'),
+                    l(t('delete'), 'admin/config/content/rss/' . $rss_feed->id . '/delete'),
+                );
+
+                $row [] = array(
+                    array('data' => $rss_feed->name),
+                    array('data' => $rss_feed->url),
+                    array('data' => implode(' | ', $actions)),
+                );
+            }
+        }
+
+        return theme('table', array(
+            'header' => $header,
+            'rows'   => $row,
+        ));
+
+}
+
+
+
 function rss_block_info(){
     $blocks['rss'] = array(
         'info' => "RSS feeds",
