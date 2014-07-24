@@ -1,51 +1,61 @@
 <?php
 
+                
 function rss_menu(){
     $items = array();
+
+
+
     $items['admin/config/content/rss'] = array(
-        'title' => 'rss',
-        'description' => 'rss feeds',
-        'page callback' => 'rss_list',
+        'title'            => 'Add rss',
+        'page callback'    => 'drupal_get_form',
+        'page arguments'   => array('rss_form'),
+        'access arguments' => array('administer site configuration'),
+        'type'             => MENU_DEFAULT_LOCAL_TASK,
+
     );
+
 
     return $items;
 
 }
 
-function rss_list(){
 
-        $header = array(
-            array('data' => t('Name')),
-            array('data' => t('URL')),
-            array('data' => t('Actions'))
-        );
-        $rss = db_select('rss', 'n')
-            ->fields('n', array('id', 'name', 'url'))
-            ->execute()->fetchAll();
-        $row = array();
-        if ($rss) {
-            foreach ($rss as $rss_feed) {
-                $actions = array(
-                    l(t('edit'), 'admin/config/content/rss/' . $rss_feed->id . '/edit'),
-                    l(t('delete'), 'admin/config/content/rss/' . $rss_feed->id . '/delete'),
-                );
 
-                $row [] = array(
-                    array('data' => $rss_feed->name),
-                    array('data' => $rss_feed->url),
-                    array('data' => implode(' | ', $actions)),
-                );
-            }
-        }
+function rss_form($form, &$form_state, $rss = null)
+{
 
-        return theme('table', array(
-            'header' => $header,
-            'rows'   => $row,
-        ));
+    $form['url'] = array(
+        '#title'         => t('RSS feed url.'),
+        '#description'   => t('Insert RSS url'),
+        '#type'          => 'textfield',
+        '#default_value' => variable_get('rss_url', 0),
+        '#required'      => true,
+    );
+
+    $form['submit'] = array(
+        '#type'  => 'submit',
+        '#value' => t('Add'),
+    );
+
+    return $form;
 
 }
 
+function rss_form_submit($form, &$form_state)
+{
+    $rss = array(
+        'url' => $form_state['values']['url'],
 
+    );
+
+        variable_set('rss_url', $rss['url']);
+
+        drupal_set_message(t('RSS Feed added!'));
+
+
+    drupal_goto('admin/config/content/rss');
+}
 
 function rss_block_info(){
     $blocks['rss'] = array(
@@ -55,10 +65,11 @@ function rss_block_info(){
 }
 
 function load_rss($result = 'item'){
-    $rss_url = "http://partners.userland.com/nytRss/nytHomepage.xml";
+    $rss_url = variable_get('rss_url');
     $rss = simplexml_load_file($rss_url);
     $data = $rss->channel->$result;
-    return $data;
+
+   return $data;
 }
 
 function rss_block_view($delta = ''){
@@ -76,8 +87,8 @@ function rssblock_view(){
 
     for ($i = 0; $i < 5; $i++){
         $item[]=array(
-            'title'=> $res[$i]->title,
-            'link' => $res[$i]->link,
+            'title'       => $res[$i]->title,
+            'link'        => $res[$i]->link,
             'description' => $res[$i]->description,
         );
     }
