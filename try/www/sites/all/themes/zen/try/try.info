@@ -67,6 +67,11 @@ stylesheets[all][] = css/styles.css
 ; Optionally add some JavaScripts to your theme.
 
 scripts[] = js/script.js
+scripts[] = js/jquery.flexslider-min.js
+scripts[] = js/flex.js
+scripts[] = js/jquery.selectbox.min.js
+scripts[] = js/selectbox.js
+
 
 
 

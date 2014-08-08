@@ -1,0 +1,340 @@
+<?php
+
+function hotel_book_menu() {
+    $items = array();
+
+    $items['reservation'] = array(
+        'title' => 'Reservation',
+        'page callback'    => 'drupal_get_form',
+        'page arguments'   => array('reservation_form'),
+        'access callback' => TRUE,
+    );
+
+    $items['reservation/select'] = array(
+        'title' => 'Select Room',
+        'page callback'    => 'reservation_page',
+        'access callback' => TRUE,
+    );
+
+    $items['reservation/guest'] = array(
+        'title' => 'Guest information',
+        'page callback'    => 'drupal_get_form',
+        'page arguments'   => array('guest_form'),
+        'access callback' => TRUE,
+    );
+
+    $items['reservation/finish'] = array(
+        'title' => 'Finish',
+        'page callback'    => 'finish_page',
+        'access callback' => TRUE,
+    );
+
+    return $items;
+}
+
+/*************fu*************/
+
+function reservation_form($form, &$form_state)
+{
+    $date_format = 'd/m/Y';
+
+
+    $form['check_in'] = array(
+        '#title'         => t('Check-In'),
+        '#type'          => 'date_popup',
+        '#date_format'   => $date_format,
+        '#required'      => TRUE
+    );
+
+    $form['check_out'] = array(
+        '#title'         => t('Check-Out'),
+        '#type'          => 'date_popup',
+        '#date_format'   => $date_format,
+        '#required'      => TRUE
+    );
+
+    $form['number_rooms'] = array(
+        '#title'         => t('Number of rooms:'),
+        '#type'          => 'select',
+        '#options'       => drupal_map_assoc(array(t('1'), t('2'))),
+
+    );
+
+    $form['adults'] = array(
+        '#title'         => t('Adults per room:'),
+        '#type'          => 'select',
+        '#options'       => drupal_map_assoc(array(t('1'), t('2'))),
+
+    );
+
+    $form['children_5'] = array(
+        '#title'         => t('Children 0-5:'),
+        '#type'          => 'select',
+        '#options'       => drupal_map_assoc(array(t('1'), t('2'))),
+
+    );
+
+    $form['children_12'] = array(
+        '#title'         => t('Children 6-12:'),
+        '#type'          => 'select',
+        '#options'       => drupal_map_assoc(array(t('1'), t('2'))),
+
+    );
+
+
+    $form['submit'] = array(
+        '#type'  => 'submit',
+        '#value' => t('Continue'),
+    );
+
+    return $form;
+
+}
+
+function reservation_form_submit($form, &$form_state)
+{
+    $_SESSION = array(
+        'reservation' =>
+            array(
+                'check_in' => $form_state['values']['check_in'],
+                'check_out' => $form_state['values']['check_out'],
+                'number_rooms' => $form_state['values']['number_rooms'],
+                'adults' => $form_state['values']['adults'],
+                'children_5' => $form_state['values']['children_5'],
+                'children_12' => $form_state['values']['children_12'],
+            )
+    );
+    drupal_goto('reservation/select');
+}
+
+function reservation_page() {
+    $output = '';
+
+    $query = db_select('node','n');
+    $query->fields('n',array('nid','title'));
+    $query->fields('d',array('field_select_price_value'));
+    $query->leftJoin('field_data_field_select_price','d','d.entity_id = n.nid');
+    $query->leftJoin('field_data_field_number_rooms','r','r.entity_id = n.nid');
+
+    $query->condition('n.type','select');
+    $query->condition('r.field_number_rooms_value',$_SESSION['reservation']['number_rooms']);
+    $res = $query->execute()->fetchAll();
+
+    $timestamp3 = strtotime($_SESSION['reservation']['check_in']);
+    $timestamp4 = strtotime($_SESSION['reservation']['check_out']);
+
+    $query_date = db_select('hotel_book', 'n')
+        ->fields('n')
+        ->execute()
+        ->fetchAll();
+
+    foreach ($res as $row){
+        $output .= '<div id="select-item" style="box-shadow: 0px 3px 1px #e2e2e2; width: 673px; height: 200px; background-color: #ffffff; position: relative; margin-bottom: 23px; border: 1px solid #dedede; border-radius: 3px">';
+        $query_image = db_select('field_data_field_select_image','n');
+        $query_image->fields('f',array('filename'));
+        $query_image->leftJoin('file_managed','f','f.fid = n.field_select_image_fid');
+        $query_image->condition('n.entity_id', $row->nid);
+        $res_image = $query_image->execute()->fetchAll();
+
+
+        foreach ($res_image as $image) {
+            $output .= '<img class="item-select" style="display:block; width:190px; height: 200px; border-right: 1px solid #d7d4d2; float:left" src="/sites/default/files/'.$image->filename.'" />';
+        }
+        $output .= '<div style="position: absolute; width: 480px; height: 200px; right: 0; padding: 0; margin: 0"> ';
+        $output .= '<p class="item-select-title" style="width: 440px; display: block; font-size: 17px; font-weight: bold; margin: 20px">'.$row->title.'</p>';
+        $output .= '<ul class="item-select-ul" style=" margin-left: 10px; margin-top: -10px ">';
+        $query_text = db_select('node','n');
+        $query_text->fields('t',array('field_text_value'));
+        $query_text->leftJoin('field_data_field_text','t','t.entity_id = n.nid');
+        $query_text->condition('n.type','select');
+        $query_text->condition('t.entity_id', $row->nid);
+        $res_text = $query_text->execute()->fetchAll();
+
+        foreach ($res_text as $text) {
+            $output .= '<li style="font-size: 13px; width: 195px; float: left; margin-right: 20px; height: 20px; color: #868585 ">'.$text->field_text_value.'</li>';
+        }
+
+        $output .= '</ul>';
+        $output .= '<img style="width: 440px; margin-left: 20px; margin-bottom: 0" src="/sites/all/themes/zen/try/images/line.png" />';
+        $output .= '<p class="select-price" style="float: left; margin-right: 15px; margin-left: 20px; margin-top: 15px; font-size: 18px; font-weight: bold; ">'.$row->field_select_price_value.'</p>';
+
+
+        $output .= '<div class="selected">';
+        $dat = 0;
+        foreach ($query_date as $date){
+
+        if ($row->nid == $date->nid){
+
+            switch (true) {
+                case $date->date_in_stamp > $timestamp3 && $date->date_in_stamp < $timestamp4 :
+                    $dat+=1;
+                    break;
+                case $date->date_out_stamp > $timestamp3 && $date->date_out_stamp < $timestamp4 :
+                    $dat+=1;
+                    break;
+                case $timestamp3 > $date->date_in_stamp && $timestamp3 < $date->date_out_stamp :
+                    $dat+=1;
+                    break;
+                case $timestamp4 > $date->date_in_stamp && $timestamp4 < $date->date_out_stamp :
+                    $dat+=1;
+                    break;
+                case $date->date_in_stamp == $timestamp3 :
+                    $dat+=1;
+                    break;
+                case $date->date_out_stamp == $timestamp3 :
+                    $dat+=1;
+                    break;
+                case $date->date_in_stamp == $timestamp4 :
+                    $dat+=1;
+                    break;
+                case $date->date_out_stamp == $timestamp4 :
+                    $dat+=1;
+                    break;
+                }
+            }
+        }
+
+        if ($dat == 0) {
+            $output .= '<div class="select">';
+            $output .= l('Select a Room','reservation/guest',array('query' => array('rid' => $row->nid)));
+            $output .= '</div>';
+        }
+        else {
+            $output .= '<p>Selected</p>';
+        }
+
+        $output .= '</div>';
+        $output .= '</div>';
+        $output .= '</div>';
+
+    }
+    return $output;
+}
+
+
+function guest_form($form, &$form_state) {
+    $form['title'] = array(
+        '#title'         => t('Title'),
+        '#type'          => 'textfield',
+    );
+
+    $form['first_name'] = array(
+        '#title'         => t('First name'),
+        '#type'          => 'textfield',
+    );
+
+    $form['last_name'] = array(
+        '#title'         => t('Last name'),
+        '#type'          => 'textfield',
+    );
+
+    $form['address'] = array(
+        '#title'         => t('Address'),
+        '#type'          => 'textfield',
+    );
+
+    $form['city'] = array(
+        '#title'         => t('City'),
+        '#type'          => 'textfield',
+    );
+
+    $form['state'] = array(
+        '#title'         => t('State/Province'),
+        '#type'          => 'select',
+        '#default'       => 'State/Province',
+        '#options'       => drupal_map_assoc(array(t('1'), t('2'))),
+    );
+
+    $form['zip'] = array(
+        '#title'         => t('Zip/Postal code'),
+        '#type'          => 'textfield',
+    );
+
+    $form['primary'] = array(
+        '#title'         => t('Primare Telephone'),
+        '#type'          => 'textfield',
+    );
+
+    $form['email'] = array(
+        '#title'         => t('Email'),
+        '#type'          => 'textfield',
+    );
+
+    $form['retype'] = array(
+        '#title'         => t('Retype Email'),
+        '#type'          => 'textfield',
+    );
+
+    $form['credit'] = array(
+        '#title'         => t('Credit card'),
+        '#type'          => 'select',
+        '#default'       => 'VISA',
+        '#options'       => drupal_map_assoc(array(t('1'), t('2'))),
+    );
+
+    $form['card_number'] = array(
+        '#title'         => t('Card number'),
+        '#type'          => 'textfield',
+    );
+
+    $form['expires_1'] = array(
+        '#title'         => t('Expires'),
+        '#type'          => 'select',
+        '#options'       => drupal_map_assoc(array(t('1'), t('2'))),
+    );
+
+    $form['expires_2'] = array(
+
+        '#type'          => 'select',
+        '#options'       => drupal_map_assoc(array(t('1'), t('2'))),
+    );
+
+    $form['submit'] = array(
+        '#type'  => 'submit',
+        '#value' => t('Continue'),
+    );
+
+    return $form;
+}
+
+function guest_form_submit($form, &$form_state)
+{
+    $rid = $_GET{'rid'};
+    $timestamp = strtotime($_SESSION['reservation']['check_in']);
+    $timestamp2 = strtotime($_SESSION['reservation']['check_out']);
+
+    $result = db_insert('hotel_book')
+        ->fields(array(
+            'nid'       =>  $rid,
+            'date_in'   =>  $_SESSION['reservation']['check_in'],
+            'date_in_stamp' => $timestamp,
+            'date_out'  =>  $_SESSION['reservation']['check_out'],
+            'date_out_stamp' => $timestamp2,
+            'name'      =>  $form_state['values']['first_name'],
+            'last_name' =>  $form_state['values']['last_name'],
+            'children_5'=> $_SESSION['reservation']['children_5'],
+            'children_12'=> $_SESSION['reservation']['children_12'],
+            'adults'=> $_SESSION['reservation']['adults'],
+            'title' =>  $form_state['values']['title'],
+            'address' =>  $form_state['values']['address'],
+            'city' =>  $form_state['values']['city'],
+            'state' =>  $form_state['values']['state'],
+            'zip' =>  $form_state['values']['zip'],
+            'telephone' =>  $form_state['values']['primary'],
+            'email' =>  $form_state['values']['email'],
+            'credit_card' => $form_state['values']['credit'],
+            'card_number' => $form_state['values']['card_number'],
+            'expires' => $form_state['values']['expires_1'],
+        ))
+        ->execute();
+    drupal_goto('reservation/finish');
+}
+
+function finish_page(){
+    return "Thank you for your reservation!";
+}
+
+
+
+
+

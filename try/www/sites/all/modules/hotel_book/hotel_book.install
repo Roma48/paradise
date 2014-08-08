@@ -1,0 +1,42 @@
+<?php
+
+function hotel_book_uninstall() {
+    cache_clear_all('hotel_book', 'cache', TRUE);
+    drupal_uninstall_schema('hotel_book');
+
+}
+
+function hotel_book_schema(){
+
+
+    $schema = array();
+    $date_format = 'd/m/Y';
+   $schema['hotel_book'] = array(
+       'fields' => array(
+            'date_id'   => array('type'=>'serial',  'size'      =>'normal', 'not null' => TRUE),
+            'nid'       => array('type'=>'int',     'not null'=> TRUE),
+            'date_in'   => array('mysql_type'=>'date', 'date_format'=> $date_format, 'not null'=> TRUE),
+            'date_out'  => array('mysql_type'=>'date', 'date_format'=> $date_format, 'not null'=> TRUE),
+            'date_in_stamp'   => array('type'=>'int', 'size'      =>'big', 'length'    => 255, 'not null'=> TRUE),
+            'date_out_stamp'  => array('type'=>'int', 'size'      =>'big', 'length'    => 255, 'not null'=> TRUE),
+            'name'      => array('type'=>'varchar', 'length'    => 255,      'not null'=> TRUE),
+            'last_name' => array('type'=>'varchar', 'length'    => 255,      'not null'=> TRUE),
+           'children_5' =>array('type'=>'int', 'size'=>'normal', 'not null'=> TRUE),
+           'children_12' =>array('type'=>'int', 'size'=>'normal', 'not null'=> TRUE),
+           'adults' =>array('type'=>'int', 'size'=>'normal', 'not null'=> TRUE),
+           'title' => array('type'=>'varchar', 'length'    => 255,      'not null'=> TRUE),
+           'address' => array('type'=>'varchar', 'length'    => 255,      'not null'=> TRUE),
+           'city' => array('type'=>'varchar', 'length'    => 255,      'not null'=> TRUE),
+           'state' => array('type'=>'varchar', 'length'    => 255,      'not null'=> TRUE),
+           'zip' => array('type'=>'varchar', 'length'    => 255,      'not null'=> TRUE),
+           'telephone' => array('type'=>'varchar', 'length'    => 255,      'not null'=> TRUE),
+           'email' => array('type'=>'varchar', 'length'    => 255,      'not null'=> TRUE),
+           'credit_card' => array('type'=>'varchar', 'length'    => 255,      'not null'=> TRUE),
+           'card_number' => array('type'=>'varchar', 'length'    => 255,      'not null'=> TRUE),
+           'expires' => array('type'=>'varchar', 'length'    => 255,      'not null'=> TRUE),
+       ),
+       'primary key' => array('date_id')
+   );
+    return $schema;
+}
+

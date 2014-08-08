@@ -41,10 +41,7 @@
   <?php endif; ?>
 
 
-    <script src="<?php print $base_path . $path_to_zen; ?>/try/js/jquery.flexslider-min.js"></script>
-    <script src="<?php print $base_path . $path_to_zen; ?>/try/js/flex.js"></script>
-    <script src="<?php print $base_path . $path_to_zen; ?>/try/js/jquery.selectbox.min.js"></script>
-    <script src="<?php print $base_path . $path_to_zen; ?>/try/js/selectbox.js"></script>
+
 
 
 </head>

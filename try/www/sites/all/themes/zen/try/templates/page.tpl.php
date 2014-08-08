@@ -73,7 +73,7 @@
 
   <div id="main">
 
-    <div id="content" class="column" role="main">
+    <div id="content-page" class="column" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>

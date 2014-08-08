@@ -1,0 +1,7 @@
+; $Id:$
+name = hotel_book
+description = this is my module
+version = 7.x-dev
+core = 7.x
+
+files[] = reservation.tpl.php

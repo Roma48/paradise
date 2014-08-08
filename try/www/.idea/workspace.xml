@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a8ac69e-0320-4daa-a3b7-004306d0b151" name="Default" comment="" />
+    <list default="true" id="652f8083-5999-426e-a669-4f2499da3c08" name="Default" comment="" />
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,84 +23,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="page.tpl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page.tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="0" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.0" vertical-offset="1598" max-vertical-offset="2074">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page--node--55.tpl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--node--55.tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="13" selection-start="0" selection-end="3473" vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="2040">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="responsive.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/css/layouts/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1153" column="20" selection-start="20006" selection-end="20006" vertical-scroll-proportion="0.0" vertical-offset="19073" max-vertical-offset="19890">
+            <state line="1361" column="113" selection-start="23495" selection-end="23495" vertical-scroll-proportion="0.0" vertical-offset="23863" max-vertical-offset="24750">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gmap_plugin_style_gmap.inc" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/gmap/gmap_plugin_style_gmap.inc">
+      <file leaf-file-name="page--reservation--guest.tpl.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--reservation--guest.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="583" column="1" selection-start="29566" selection-end="29566" vertical-scroll-proportion="0.9562982" vertical-offset="9167" max-vertical-offset="10013">
+            <state line="79" column="42" selection-start="2901" selection-end="2901" vertical-scroll-proportion="3.3076923" vertical-offset="1400" max-vertical-offset="2178">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hotel_book.info" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/hotel_book/hotel_book.info">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="21" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hotel_book.install" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/hotel_book/hotel_book.install">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="19" selection-start="2198" selection-end="2198" vertical-scroll-proportion="-24.23077" vertical-offset="0" max-vertical-offset="864">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hotel_book.module" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/hotel_book/hotel_book.module">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="124" column="0" selection-start="3540" selection-end="3540" vertical-scroll-proportion="1.9046391" vertical-offset="754" max-vertical-offset="6228">
               <folding>
-                <element signature="e#7#45#0" expanded="true" />
+                <marker date="1407505656518" expanded="false" signature="3730:3905" placeholder="..." />
+                <marker date="1407505656518" expanded="false" signature="4520:4600" placeholder="..." />
+                <marker date="1407505656518" expanded="false" signature="4818:4856" placeholder="..." />
+                <marker date="1407505656518" expanded="false" signature="5489:5538" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page--hotel-location.tpl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--hotel-location.tpl.php">
+      <file leaf-file-name="rss.info" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/rss/rss.info">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="18" selection-start="2781" selection-end="2781" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="2057">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="normalize.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/STARTERKIT/css/normalize.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="0" selection-start="3209" selection-end="3209" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="9537">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="normalize.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/css/normalize.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="1" selection-start="3077" selection-end="3077" vertical-scroll-proportion="0.0" vertical-offset="1581" max-vertical-offset="9537">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="misc.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/css/components/misc.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="12954">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page--front.tpl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--front.tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="67" selection-start="2534" selection-end="2534" vertical-scroll-proportion="0.0" vertical-offset="1343" max-vertical-offset="2159">
+            <state line="7" column="0" selection-start="168" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
               <folding />
             </state>
           </provider>
@@ -116,31 +92,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/sites/all/themes/zen/try/templates/html.tpl.php" />
-        <option value="$PROJECT_DIR$/sites/all/modules/book/book.info" />
         <option value="$PROJECT_DIR$/sites/all/modules/book/book.module" />
-        <option value="$PROJECT_DIR$/sites/all/themes/zen/try/templates/front--page.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/rss/rss.install" />
+        <option value="$PROJECT_DIR$/sites/all/modules/book/book.install" />
+        <option value="D:/drupal/book/book.info" />
+        <option value="D:/drupal/book/book.install" />
+        <option value="D:/drupal/book/book.module" />
         <option value="$PROJECT_DIR$/sites/all/themes/zen/try/try.info" />
-        <option value="$PROJECT_DIR$/sites/all/themes/zen/try/template.php" />
-        <option value="$PROJECT_DIR$/sites/all/themes/zen/templates/page.tpl.php" />
-        <option value="$PROJECT_DIR$/sites/all/themes/zen/try/templates/page.tpl.php" />
-        <option value="$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--front.tpl.php" />
-        <option value="$PROJECT_DIR$/sites/all/themes/zen/try/css/components/misc.css" />
-        <option value="$PROJECT_DIR$/sites/all/themes/zen/STARTERKIT/css/normalize.css" />
-        <option value="$PROJECT_DIR$/sites/all/themes/zen/try/css/normalize.css" />
-        <option value="$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--node--55.tpl.php" />
-        <option value="$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--map--node.tpl.php" />
-        <option value="$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--hotel--location.tpl.php" />
-        <option value="$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--hotel-location.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/zen/try/templates/html.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--reservation.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--reservation--guest.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/zen/try/css/layouts/responsive.css" />
-        <option value="$PROJECT_DIR$/sites/all/modules/gmap/gmap_plugin_style_gmap.inc" />
+        <option value="$PROJECT_DIR$/sites/all/modules/rss/rss.module" />
+        <option value="$PROJECT_DIR$/sites/all/modules/hotel_book/reservation.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/hotel_book/hotel_book.info" />
+        <option value="$PROJECT_DIR$/sites/all/modules/hotel_book/hotel_book.install" />
+        <option value="$PROJECT_DIR$/sites/all/modules/hotel_book/hotel_book.module" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="width" value="1291" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -169,7 +144,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -332,6 +306,112 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="try" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -358,26 +438,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gmap" />
+              <option name="myItemId" value="rss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel_book" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/респонсив/selectbox.css" />
     <property name="FullScreen" value="false" />
+    <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\webservers\home\try\www\sites\all\themes\zen\templates" />
       <recent name="D:\webservers\home\try\www\sites\all\themes\zen\try\templates" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\webservers\home\try\www\sites\all\modules" />
     </key>
   </component>
   <component name="RunManager">
@@ -397,41 +501,24 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6a8ac69e-0320-4daa-a3b7-004306d0b151" name="Default" comment="" />
-      <created>1405356339293</created>
-      <updated>1405356339293</updated>
+      <changelist id="652f8083-5999-426e-a669-4f2499da3c08" name="Default" comment="" />
+      <created>1406648163873</created>
+      <updated>1406648163873</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1291" height="1000" extended-state="1" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28313726" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34006462" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -440,11 +527,31 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298611" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32956383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -463,331 +570,296 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/STARTERKIT/css/normalize.css">
+    <entry file="file://$USER_HOME$/Downloads/news/news/delete.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="0" selection-start="3209" selection-end="3209" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="9537">
-          <folding />
+        <state line="4" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="396" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/form.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="14" selection-start="4472" selection-end="4472" vertical-scroll-proportion="0.0" vertical-offset="2232" max-vertical-offset="83862" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/hotel_book/hotel_book.install">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="19" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="576" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/hotel_book/hotel_book.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="0" selection-start="5169" selection-end="5169" vertical-scroll-proportion="0.0" vertical-offset="2014" max-vertical-offset="2844">
+          <folding>
+            <marker date="1407505656518" expanded="false" signature="3730:3905" placeholder="..." />
+            <marker date="1407505656518" expanded="false" signature="4520:4600" placeholder="..." />
+            <marker date="1407505656518" expanded="false" signature="4818:4856" placeholder="..." />
+            <marker date="1407505656518" expanded="false" signature="5489:5538" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/css/normalize.css">
+    <entry file="file://$USER_HOME$/Downloads/news/news/autors.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="1" selection-start="3077" selection-end="3077" vertical-scroll-proportion="0.0" vertical-offset="1581" max-vertical-offset="9537">
-          <folding />
-        </state>
+        <state line="6" column="46" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="990" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/css/components/misc.css">
+    <entry file="file://$USER_HOME$/Downloads/news/news/delete.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="12954">
-          <folding />
-        </state>
+        <state line="4" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="396" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--front.tpl.php">
+    <entry file="file://$PROJECT_DIR$/includes/form.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="67" selection-start="2534" selection-end="2534" vertical-scroll-proportion="0.0" vertical-offset="1343" max-vertical-offset="2159">
-          <folding />
-        </state>
+        <state line="124" column="14" selection-start="4472" selection-end="4472" vertical-scroll-proportion="0.0" vertical-offset="2232" max-vertical-offset="83862" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page.tpl.php">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/hotel_book/hotel_book.install">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.0" vertical-offset="1598" max-vertical-offset="2074">
-          <folding />
-        </state>
+        <state line="4" column="35" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--node--55.tpl.php">
+    <entry file="file://$PROJECT_DIR$/modules/book/book.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="2753" selection-end="2753" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="2040">
-          <folding />
-        </state>
+        <state line="871" column="47" selection-start="29494" selection-end="29494" vertical-scroll-proportion="0.0" vertical-offset="15678" max-vertical-offset="25974" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/css/layouts/responsive.css">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/hotel_book/hotel_book.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1031" column="22" selection-start="17937" selection-end="17937" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="18700">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/STARTERKIT/css/normalize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="0" selection-start="3209" selection-end="3209" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="9537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/css/normalize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="1" selection-start="3077" selection-end="3077" vertical-scroll-proportion="0.0" vertical-offset="1581" max-vertical-offset="9537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/css/components/misc.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="12954">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--front.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2159">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.0" vertical-offset="1598" max-vertical-offset="2074">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--node--55.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="2753" selection-end="2753" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="2040">
-          <folding />
+        <state line="126" column="0" selection-start="4431" selection-end="4431" vertical-scroll-proportion="0.0" vertical-offset="2268" max-vertical-offset="2700">
+          <folding>
+            <marker date="1407505656518" expanded="false" signature="3730:3905" placeholder="..." />
+            <marker date="1407505656518" expanded="false" signature="4520:4600" placeholder="..." />
+            <marker date="1407505656518" expanded="false" signature="4818:4856" placeholder="..." />
+            <marker date="1407505656518" expanded="false" signature="5489:5538" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/css/layouts/responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1040" column="11" selection-start="17967" selection-end="17967" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="17816">
-          <folding />
-        </state>
+        <state line="1158" column="0" selection-start="20048" selection-end="20048" vertical-scroll-proportion="0.0" vertical-offset="18601" max-vertical-offset="23238" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/css/components/misc.css">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--reservation.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="12954">
-          <folding />
-        </state>
+        <state line="105" column="34" selection-start="3910" selection-end="3910" vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="2232" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--front.tpl.php">
+    <entry file="file://$USER_HOME$/Documents/rss.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="67" selection-start="2534" selection-end="2534" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2159">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2074">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--node--55.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="2753" selection-end="2753" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="2040">
-          <folding />
-        </state>
+        <state line="58" column="19" selection-start="676" selection-end="1943" vertical-scroll-proportion="0.0" vertical-offset="739" max-vertical-offset="2826" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/css/layouts/responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="967" column="0" selection-start="16866" selection-end="16866" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="17051">
-          <folding />
-        </state>
+        <state line="1158" column="0" selection-start="20048" selection-end="20048" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="23238" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--front.tpl.php">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--reservation.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="67" selection-start="2534" selection-end="2534" vertical-scroll-proportion="0.0" vertical-offset="1343" max-vertical-offset="2159">
-          <folding />
-        </state>
+        <state line="105" column="34" selection-start="3910" selection-end="3910" vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="2232" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/rss.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="19" selection-start="676" selection-end="1943" vertical-scroll-proportion="0.0" vertical-offset="739" max-vertical-offset="2826" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/css/layouts/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1284" column="0" selection-start="21907" selection-end="21907" vertical-scroll-proportion="0.0" vertical-offset="22381" max-vertical-offset="23220" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--reservation.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="34" selection-start="3910" selection-end="3910" vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="2232" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/rss.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="19" selection-start="676" selection-end="1943" vertical-scroll-proportion="0.0" vertical-offset="739" max-vertical-offset="2826" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/css/layouts/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1111" column="14" selection-start="19041" selection-end="19051" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="23094" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--reservation.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="34" selection-start="3910" selection-end="3910" vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="2232" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/rss.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="19" selection-start="676" selection-end="1943" vertical-scroll-proportion="0.0" vertical-offset="739" max-vertical-offset="2826" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--reservation.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="34" selection-start="3910" selection-end="3910" vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="2232" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/rss.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="19" selection-start="676" selection-end="1943" vertical-scroll-proportion="0.0" vertical-offset="739" max-vertical-offset="2826" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--reservation.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="34" selection-start="3910" selection-end="3910" vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="2124" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/rss.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="19" selection-start="676" selection-end="1943" vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="2826" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/rss.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="19" selection-start="676" selection-end="1943" vertical-scroll-proportion="-11.730769" vertical-offset="739" max-vertical-offset="2826" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/rss/rss.install">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="7" selection-end="92" vertical-scroll-proportion="-1.3846154" vertical-offset="0" max-vertical-offset="252" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/book/book.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="871" column="47" selection-start="29494" selection-end="29494" vertical-scroll-proportion="0.0" vertical-offset="15678" max-vertical-offset="25974" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/form.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="14" selection-start="4472" selection-end="4472" vertical-scroll-proportion="0.0" vertical-offset="2232" max-vertical-offset="83862" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/news/news/autors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="46" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="990" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/news/news/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="396" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/node/node.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1062" column="10" selection-start="34511" selection-end="34518" vertical-scroll-proportion="0.0" vertical-offset="19116" max-vertical-offset="75438" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--node--55.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="2559" selection-end="3472" vertical-scroll-proportion="0.0" vertical-offset="1314" max-vertical-offset="2160" />
+      </provider>
+    </entry>
+    <entry file="file://D:/респонсив/style1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="283" column="19" selection-start="4029" selection-end="4062" vertical-scroll-proportion="0.0" vertical-offset="12204" max-vertical-offset="22266" />
+      </provider>
+    </entry>
+    <entry file="file://D:/респонсив/selectbox.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="124" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1890" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/node.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="804" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="6" selection-start="3338" selection-end="3338" vertical-scroll-proportion="0.0" vertical-offset="1904" max-vertical-offset="2312">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/book/book.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/book/book.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="22" selection-start="3128" selection-end="3128" vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="2312">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/book/book.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/book/book.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="22" selection-start="3128" selection-end="3128" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2312">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/book/book.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/book/book.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="22" selection-start="3128" selection-end="3128" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2312">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="14" selection-start="3225" selection-end="3225" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="2312">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="4" selection-start="3717" selection-end="3717" vertical-scroll-proportion="0.0" vertical-offset="1870" max-vertical-offset="2686">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="23" selection-start="3816" selection-end="3816" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2856">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/html.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="2" selection-start="2016" selection-end="2016" vertical-scroll-proportion="-27.461538" vertical-offset="0" max-vertical-offset="1037" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/book/book.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/region.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="838" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/region--footer.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="817" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/region--sidebar.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="817" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="17" selection-start="3588" selection-end="3588" vertical-scroll-proportion="-79.11539" vertical-offset="0" max-vertical-offset="2346" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2088" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/try.info">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="527" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2618" />
+        <state line="72" column="27" selection-start="2853" selection-end="2853" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="2862" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/book/book.info">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/html.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170" />
+        <state line="43" column="0" selection-start="1635" selection-end="1635" vertical-scroll-proportion="-14.576923" vertical-offset="287" max-vertical-offset="1044" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/templates/page.tpl.php">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--reservation.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="11" selection-start="195" selection-end="1709" vertical-scroll-proportion="-17.0" vertical-offset="306" max-vertical-offset="2040" />
+        <state line="47" column="16" selection-start="1846" selection-end="2034" vertical-scroll-proportion="-9.692307" vertical-offset="486" max-vertical-offset="2178" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--front.tpl.php">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/js/jquery.selectbox.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="67" selection-start="2534" selection-end="2534" vertical-scroll-proportion="0.0" vertical-offset="1343" max-vertical-offset="2159">
-          <folding />
-        </state>
+        <state line="1" column="653" selection-start="759" selection-end="761" vertical-scroll-proportion="-0.72" vertical-offset="0" max-vertical-offset="126" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/css/components/misc.css">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/hotel_book/reservation.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="12954">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/STARTERKIT/css/normalize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="0" selection-start="3209" selection-end="3209" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="9537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/css/normalize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="1" selection-start="3077" selection-end="3077" vertical-scroll-proportion="0.0" vertical-offset="1581" max-vertical-offset="9537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.0" vertical-offset="1598" max-vertical-offset="2074">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--node--55.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="13" selection-start="0" selection-end="3473" vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="2040">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--hotel-location.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="18" selection-start="2781" selection-end="2781" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="2057">
-          <folding />
+        <state line="13" column="2" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="342">
+          <folding>
+            <marker date="1407491510586" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/css/layouts/responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1153" column="20" selection-start="20006" selection-end="20006" vertical-scroll-proportion="0.0" vertical-offset="19073" max-vertical-offset="19890">
+        <state line="1361" column="113" selection-start="23495" selection-end="23495" vertical-scroll-proportion="0.0" vertical-offset="23863" max-vertical-offset="24750">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/gmap/gmap_plugin_style_gmap.inc">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/zen/try/templates/page--reservation--guest.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="583" column="1" selection-start="29566" selection-end="29566" vertical-scroll-proportion="0.9562982" vertical-offset="9167" max-vertical-offset="10013">
+        <state line="79" column="42" selection-start="2901" selection-end="2901" vertical-scroll-proportion="3.3076923" vertical-offset="1400" max-vertical-offset="2178">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/rss/rss.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="168" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/rss/rss.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="69" selection-start="265" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="2070">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/rss/rssblock.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="817">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/hotel_book/hotel_book.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="21" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/hotel_book/hotel_book.install">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="19" selection-start="2198" selection-end="2198" vertical-scroll-proportion="-24.23077" vertical-offset="0" max-vertical-offset="864">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/hotel_book/hotel_book.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="0" selection-start="3540" selection-end="3540" vertical-scroll-proportion="1.9046391" vertical-offset="754" max-vertical-offset="6228">
           <folding>
-            <element signature="e#7#45#0" expanded="true" />
+            <marker date="1407505656518" expanded="false" signature="3730:3905" placeholder="..." />
+            <marker date="1407505656518" expanded="false" signature="4520:4600" placeholder="..." />
+            <marker date="1407505656518" expanded="false" signature="4818:4856" placeholder="..." />
+            <marker date="1407505656518" expanded="false" signature="5489:5538" placeholder="..." />
           </folding>
         </state>
       </provider>

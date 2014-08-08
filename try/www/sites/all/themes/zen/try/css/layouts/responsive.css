@@ -268,6 +268,12 @@
   }
 }
 
+#content-page {
+    max-width: 980px;
+    margin: 0 auto;
+
+}
+
 .header__secondary-menu {
     float: none;
     position: absolute;
@@ -537,7 +543,7 @@ html[xmlns] .slides { display: block; }
     height: 40px;
     top: 11px;
     left: 11px;
-    background: url("http://try/sites/all/themes/zen/try/images/arrows.png") no-repeat;
+    background: url("/sites/all/themes/zen/try/images/arrows.png") no-repeat;
 }
 
 .flex-direction-nav a:after {
@@ -588,7 +594,7 @@ html[xmlns] .slides { display: block; }
     z-index: 2;
     margin-top: -28%;
     margin-bottom: 25%;
-    background: url("http://try/sites/all/themes/zen/try/images/ba.png") no-repeat 100%;
+    background: url("/sites/all/themes/zen/try/images/ba.png") no-repeat 100%;
     opacity: 0.8;
     height: 40px;
     width: 500px;
@@ -617,7 +623,7 @@ html[xmlns] .slides { display: block; }
     z-index: 3;
     margin-top: -25.1%;
     margin-bottom: 18.5%;
-    background: url("http://try/sites/all/themes/zen/try/images/b.png") no-repeat 100% ;
+    background: url("/sites/all/themes/zen/try/images/b.png") no-repeat 100% ;
     opacity: 0.8;
     width: 400px;
     height: 25px;
@@ -648,7 +654,7 @@ html[xmlns] .slides { display: block; }
     margin-top: -48px;
 }
 /**************************SELECTBOX*********************************/
-.selectbox {
+#edit-number-rooms .selectbox {
     display: block !important;
     cursor: pointer;
     margin-top: 10px;
@@ -657,7 +663,7 @@ html[xmlns] .slides { display: block; }
 
 
 }
-.selectbox .select {
+#edit-number-rooms .selectbox .select {
     width: 100%;
 
 
@@ -673,11 +679,11 @@ html[xmlns] .slides { display: block; }
     box-shadow: inset 1px 1px 1px #e3e3e3;
 }
 .selectbox .select:hover {
-    background-color: #f3f3f3;
+
     background-position: 0 -10px;
 }
 .selectbox .select:active {
-    background: #f5f5f5;
+
     box-shadow: inset 0 1px 3px rgba(0,0,0,0.15);
 }
 .selectbox.focused .select {
@@ -728,7 +734,7 @@ html[xmlns] .slides { display: block; }
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     font: 14px/18px Arial, Tahoma, sans-serif;
     position: relative;
-    z-index: 99999;
+    z-index: 9;
 }
 .selectbox li {
     padding: 5px 10px 6px;
@@ -739,7 +745,7 @@ html[xmlns] .slides { display: block; }
     color: #868585;
 }
 .selectbox li:hover {
-    background: #f3f3f3;
+
     color: #868585;
 }
 .selectbox li.disabled {
@@ -1099,11 +1105,11 @@ header .element-invisible {
     margin: 0;
 }
 
-#content-node-55 #block-menu-menu-hotel {
+#content-node-55 #block-menu-menu-hotel, #block-menu-menu-reservation {
     width: 100%;
     padding: 0;
     height: 60px;
-    background: url("http://try/sites/all/themes/zen/try/images/hotel_menu.png") no-repeat;
+    background: url("/sites/all/themes/zen/try/images/hotel_menu.png") no-repeat;
     margin-top: -30px;
 }
 
@@ -1112,7 +1118,7 @@ header .element-invisible {
     margin: 0 auto;
 }
 
-#block-menu-menu-hotel ul li {
+#block-menu-menu-hotel ul li, #block-menu-menu-reservation ul li {
     display: block;
     float: left;
     margin-left: 15px;
@@ -1121,7 +1127,12 @@ header .element-invisible {
 
 }
 
-#block-menu-menu-hotel ul li a {
+#block-menu-menu-reservation ul {
+    margin: 0 auto;
+    width: 500px;
+}
+
+#block-menu-menu-hotel ul li a, #block-menu-menu-reservation ul li a {
     font-family: "Open Sans", arial, serif;
     font-size: 15px;
     color: #7e7d7d !important;
@@ -1135,7 +1146,7 @@ header .element-invisible {
     max-width: 980px;
     padding: 0;
     height: 60px;
-    background: url("http://try/sites/all/themes/zen/try/images/hotel_menu.png") no-repeat;
+    background: url("/sites/all/themes/zen/try/images/hotel_menu.png") no-repeat;
     margin: -30px auto;
     position: relative;
     z-index: 2;
@@ -1145,6 +1156,7 @@ header .element-invisible {
 
     position: relative;
     z-index: 2;
+
 }
 
 #content-map-none p {
@@ -1154,11 +1166,205 @@ header .element-invisible {
 #gmap-auto1map-gmap0 {
     position: absolute;
     margin-top: -30px;
-    height: 600px !important;
+    height: 702px !important;
 
 }
 
 .map {
-    height: 750px;
+    height: 870px;
 }
 
+
+
+.gmap-popup .views-field .views-label {
+    display: none;
+}
+
+.views-field.views-field-street .field-content {
+    font-family: Roboto Light;
+    font-size: 15px;
+    color: #b0b0b0;
+}
+
+.views-field.views-field-name .field-content {
+    font-family: Roboto Light;
+    font-size: 20px;
+    color: #000000;
+}
+
+.gmap-popup {
+    width: 175px;
+}
+
+
+/**********RESERVATION************************/
+
+#content-reservation {
+    width: 980px;
+    margin: 0 auto;
+    height: 730px;
+
+}
+
+#content-reservation form {
+    margin: 0 auto;
+    width: 580px;
+}
+
+
+.form-item-check-in-time, .form-item-check-out-time, .form-item-check-in-date label, .form-item-check-out-date label, .description {
+    display: none !important;
+}
+
+.container-inline-date  {
+    width: 46.5%;
+    float: left;
+    margin-right: 1.7% !important;
+    margin-left: 1.7% !important;
+
+
+
+}
+
+.form-item-check-in {
+    width: 100%;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+
+}
+
+.container-inline-date input {
+    width: 99%;
+}
+
+.form-item-check-out {
+    float: right;
+    width: 100%;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+
+
+
+input#edit-submit.form-submit {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.form-type-select {
+    width: 21.6%;
+    float: left;
+    margin-left: 1.7% !important;
+    margin-top: 0 !important;
+    margin-right: 1.7% !important;
+
+}
+
+
+
+.form-type-select select {
+    width: 98%;
+    margin-top: 5px !important;
+}
+
+#reservation-form label {
+
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-item-check-in-date, .form-item-check-out-date {
+    margin-top: 5px !important;
+}
+
+
+
+
+/************RESERVATION SELECT***************/
+
+#select-item .select  {
+    width: 130px;
+    height: 35px;
+    background-color: #32a2e3;
+    display: block;
+    float: left;
+    margin-top: 0px;
+    box-shadow: 0px 1px 0px #2b8ac1;
+}
+
+#select-item .selected {
+    width: 130px;
+    height: 35px;
+    background-color: #d8d8d8;
+    display: block;
+    float: left;
+    margin-top: 10px;
+    box-shadow: 0px 1px 0px #b8b8b8;
+}
+
+#edit-submit {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    width: 208px !important;
+    height: 35px;
+    border: none;
+    background-color: #32a2e3;
+    box-shadow: 0px 1px 0px #2b8ac1;
+}
+
+#select-item .selected a {
+    margin: 5px auto;
+    width: 100px;
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#select-item .selected p {
+    margin: 5px auto;
+    width: 65px;
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+input.form-text {
+    height: 35px;
+    font-size: 14px;
+    color: #333;
+    text-shadow: 1px 1px #FFF;
+    border: 1px solid #d6d4d4;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 1px #e3e3e3;
+}
+
+
+/************RESERVATION guest***************/
+
+#content-reservation-guest #guest-form {
+    width: 594px;
+    margin: 0 auto;
+}
+
+#content-reservation-guest #guest-form .form-item {
+    width: 50%;
+    float: left !important;
+    height: 77px;
+    margin: 0 !important;
+}
+
+#content-reservation-guest #guest-form .form-item input, #content-reservation-guest #guest-form .form-item select, #content-reservation-guest #guest-form .form-item label {
+    width: 93%;
+    display: block;
+    margin: auto;
+}
+
+#content-reservation-guest input#edit-submit.form-submit {
+    float: left !important;
+}

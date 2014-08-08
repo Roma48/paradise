@@ -1,0 +1,8 @@
+<?php
+
+function rss_uninstall() {
+    cache_clear_all('cache', TRUE);
+
+    menu_rebuild();
+}
+
