@@ -1,8 +1,0 @@
-name = rss
-description = makes a compact page to navigate on rss feeds
-package = rss
-core = 7.x
-version = 7.x
-configure = admin/config/content/rss
-files[] = rss.module
-files[] = rssblock.tpl.php
